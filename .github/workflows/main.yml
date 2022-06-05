@@ -40,7 +40,7 @@ jobs:
           
      
         run: |
-          cd cats/
+          cd catsdogs-cloud9/cats/
           ls -ltra
          
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
@@ -61,7 +61,7 @@ jobs:
           
      
         run: |
-          cd dogs/
+          cd catsdogs-cloud9/dogs/
           ls -ltra
         
           docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
